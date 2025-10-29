@@ -7,7 +7,23 @@
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
 
+    <style>
+      #unity-container:fullscreen {
+        display: grid !important;
+        place-items: center !important;
+        background: #000 !important;
+      }
     
+      #unity-container:fullscreen #unity-canvas {
+        height: 100vh !important;
+        width: min(calc(100vh * 9 / 16), 100vw) !important;
+        aspect-ratio: 9 / 16 !important;
+        position: static !important;
+        transform: none !important;
+        left: auto !important; top: auto !important;
+        display: block !important;
+      }
+    </style>
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
